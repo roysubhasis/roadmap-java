@@ -8,13 +8,12 @@ import java.util.List;
 public class AnagramFinder{
 
   static boolean isAnagram(String str1, String str2){
-    //boolean result;
+
     if(str1.length()==str2.length()){
       char[] temp1  =str1.toCharArray();
       char[] temp2  =str2.toCharArray();
       Arrays.sort(temp1);
       Arrays.sort(temp2);
-      //result = Arrays.equals(temp1,temp2);
       return Arrays.equals(temp1,temp2);
     }else{
       return false;
