@@ -23,8 +23,6 @@ public class AnagramFinder{
   static void findAnagrams(String[] arr, int arrLength)
   {
     List<String> lst = new ArrayList<String>();
-    // Input --> "cheap", "trap", "peach", "part", "tap", "pat", "tarp"
-    // output --> "cheap, peach, trap, part, tarp, tap, pat"
     for (int i = 0; i < arrLength; i++) {
       for (int j = i + 1; j < arrLength; j++) {
         if (arr[i].length() == arr[j].length())
